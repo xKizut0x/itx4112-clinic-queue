@@ -11,20 +11,21 @@
     <h1>🏥 Clinic Service Queue</h1>
     <span class="badge">Live Desk</span>
   </header>
-
+ 
   <main class="container">
     <section aria-labelledby="form-heading">
       <h2 id="form-heading">Add to the queue</h2>
-
+ 
       <!-- TODO 1: Complete the semantic HTML form
            1. Add <label for="patient-code">Patient code</label> above the text input
            2. Add the 'required' attribute to <input id="patient-code" ...> -->
       <form id="queue-form" class="queue-form">
         <div class="field">
+          <!-- Add <label for="patient-code">Patient code</label> here -->
           <label for="patient-code">Patient code</label>
-          <input id="patient-code" type="text" placeholder="Example: P-104"required>
+          <input id="patient-code" type="text" placeholder="Example: P-104" required>
         </div>
-
+ 
         <div class="field">
           <label for="service-type">Service</label>
           <select id="service-type">
@@ -33,11 +34,11 @@
             <option value="Pharmacy pickup">Pharmacy pickup</option>
           </select>
         </div>
-
+ 
         <button id="add-button" type="submit">Add to queue</button>
       </form>
     </section>
-
+ 
     <section id="queue" aria-live="polite">
       <h2>Waiting queue</h2>
       <div id="queue-list">
@@ -52,8 +53,9 @@
       </div>
     </section>
   </main>
-
+ 
   <!-- defer runs JavaScript after the HTML structure has been read -->
   <script src="app.js" defer></script>
 </body>
 </html>
+ 
