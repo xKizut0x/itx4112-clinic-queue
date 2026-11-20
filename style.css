@@ -110,6 +110,5 @@ input, select, button {
 @media (max-width: 600px) {
   .queue-form {
   flex-direction: column;
-  align-items: stretch;
   }
 }
