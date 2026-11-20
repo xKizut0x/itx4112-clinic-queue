@@ -45,9 +45,9 @@ h2 {
 /* TODO 2: Style the form with Flexbox
    Uncomment the 3 Flexbox lines below so inputs and button sit in one horizontal row */
 .queue-form {
-  /* display: flex; */
-  /* gap: 16px; */
-  /* align-items: end; */
+  display: flex;
+  gap: 16px;
+  align-items: end;
 }
 
 .field {
@@ -109,6 +109,7 @@ input, select, button {
    Below 600px, switch .queue-form from a row to a column (flex-direction: column;) */
 @media (max-width: 600px) {
   .queue-form {
-    /* Add flex-direction: column; here */
+  flex-direction: column;
+  align-items: stretch;
   }
 }
