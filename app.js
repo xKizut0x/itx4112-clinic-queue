@@ -46,7 +46,9 @@ form.addEventListener('submit', function (event) {
   // TODO 6: Remove a served queue card
   // Add a click listener to servedBtn that calls card.remove();
   // servedBtn.addEventListener('click', function () { ... });
-  card.remove();
+  servedBtn.addEventListener('click', function () {
+    card.remove();
+  });
  
   // Assemble and append the card to #queue-list
   infoDiv.appendChild(codeText);
