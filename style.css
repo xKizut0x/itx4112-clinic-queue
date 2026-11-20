@@ -4,12 +4,12 @@
   padding: 0;
   font-family: system-ui, sans-serif;
 }
-
+ 
 body {
   background: #f1f5f9;
   color: #0f172a;
 }
-
+ 
 .top-bar {
   background: #0f4c81;
   color: white;
@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+ 
 .badge {
   background: #06b6d4;
   color: #083344;
@@ -27,21 +27,21 @@ body {
   font-weight: 700;
   font-size: 0.85rem;
 }
-
+ 
 .container {
   max-width: 760px;
   margin: 24px auto;
   padding: 0 16px;
 }
-
+ 
 section {
   margin-bottom: 28px;
 }
-
+ 
 h2 {
   margin-bottom: 12px;
 }
-
+ 
 /* TODO 2: Style the form with Flexbox
    Uncomment the 3 Flexbox lines below so inputs and button sit in one horizontal row */
 .queue-form {
@@ -49,26 +49,26 @@ h2 {
   gap: 16px;
   align-items: end;
 }
-
+ 
 .field {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-
+ 
 label {
   font-weight: 600;
   font-size: 0.9rem;
 }
-
+ 
 input, select, button {
   padding: 10px 12px;
   border-radius: 6px;
   border: 1px solid #cbd5e1;
   font-size: 1rem;
 }
-
+ 
 #add-button {
   background: #0f4c81;
   color: white;
@@ -76,7 +76,7 @@ input, select, button {
   font-weight: 600;
   cursor: pointer;
 }
-
+ 
 .patient-card {
   padding: 16px;
   border: 2px solid #06b6d4;
@@ -87,28 +87,29 @@ input, select, button {
   justify-content: space-between;
   align-items: center;
 }
-
+ 
 .patient-card .code {
   font-weight: 700;
   font-size: 1.1rem;
 }
-
+ 
 .patient-card .service {
   color: #475569;
   font-size: 0.9rem;
 }
-
+ 
 .served-btn {
   background: #e2e8f0;
   border: none;
   font-weight: 600;
   cursor: pointer;
 }
-
+ 
 /* TODO 3: Add the mobile media query
    Below 600px, switch .queue-form from a row to a column (flex-direction: column;) */
 @media (max-width: 600px) {
   .queue-form {
-  flex-direction: column;
+    /* Add flex-direction: column; here */
+    flex-direction: column;
   }
 }
